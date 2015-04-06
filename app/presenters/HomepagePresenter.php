@@ -19,10 +19,18 @@ class HomepagePresenter extends BasePresenter
      * @inject
      */    
     public $context;
+    
+    /**
+     * @var Category
+     * @inject
+     */    
+    public $category;
+    
+    
         
 	public function renderDefault()
 	{
-		$this->template->categories = new Category($this->context);
+		$this->template->categories = $this->category;
 	}
 
 }

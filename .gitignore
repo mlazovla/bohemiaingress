@@ -1,4 +1,4 @@
 /log
 /temp
-.DS_Store
-
+*.DS_Store
+/app/config/config.local.neon
