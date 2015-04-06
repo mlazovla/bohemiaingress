@@ -375,6 +375,7 @@ body {
 /* ---------------------------------------
  * Muj design
  */
+section { min-height: 100vh;}
 
 section.articles {background-color: darkgreen;}
 
