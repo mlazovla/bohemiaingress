@@ -31,10 +31,23 @@
                 <div class="container">
                     <div class="row">
                         {foreach $categories as $category}
-                            <div class="col-lg-3 col-xs-10 category">
-                                {$category->name}
+                            <div class="col-lg-4 col-xs-10">
+                                <div class="category">
+                                    <div class="category-header">
+                                        <h3>{$category->name}</h3>
+                                    </div>
+                                    <div class="category-body">
+                                        <a href="#clanek1">Update 1.74.1</a>
+                                    </div>
+                                    <div class="category-footer">
+                                        (((obrázek)))
+                                    </div>
+                                </div>
                             </div>
                         {/foreach}
+                    </div>
+                    <div>
+                        (((clanky v posuvné rade)))
                     </div>
                 </div>
             </div>
@@ -49,12 +62,15 @@
                     <h2>Kronika</h2>
                     <p>Archiv událostí týmů.</p>
                     <div class="col-lg-3 col-xs-10 kronika ENL">
+                        <img src="{$baseUrl}/vectors/enlightened.svg" style="height:2em;" />
                         Enlightened
                     </div>
                     <div class="col-lg-3 col-xs-10 kronika CROSS">
+                        <img src="{$baseUrl}/vectors/ingress.svg" style="height:2em;" />
                         Cross
                     </div>
                     <div class="col-lg-3 col-xs-10 kronika RES">
+                        <img src="{$baseUrl}/vectors/resistance.svg" style="height:2em;" />
                         Resistance
                     </div>
                 </div>

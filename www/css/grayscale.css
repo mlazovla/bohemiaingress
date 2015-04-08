@@ -7,9 +7,10 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",'Helvetica','Arial',sans-serif;
     color: #fff;
     background-color: #000;
+    font-weight: 300;
 }
 
 html {
@@ -30,6 +31,15 @@ h6 {
     letter-spacing: 1px;
 }
 
+h2 {
+    text-shadow: inset 1px 1px 0px -1px rgba(255,0,0, 0.5);
+}
+
+h3 {
+    font-weight: 300;
+    margin: 5px 0 15px 0;    
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -45,7 +55,8 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #FFAA00;
+    text-shadow: 0px 0px 3px rgba(255,200,0, 0.3);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +65,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #FF4400;
 }
 
 .light {
@@ -377,6 +388,33 @@ body {
  */
 section { min-height: 100vh;}
 
-section.articles {background-color: darkgreen;}
+section#articles {
+    background-color: #333;
+    background-image: radial-gradient(#222, #222,  black, black);
+}
 
 .article {border: 2px solid white; }
+
+
+.category {
+    border: 2px solid white;
+    background-color: #122;
+    background-image: url('../img/noisy-texture.png');
+    padding: 0 0 0 0;
+}
+
+.category-header {
+    background-color: white;
+    color:#333; 
+    margin: -5px 0 0 0;
+    text-shadow: -1px -1px 0px #EEE, 1px 1px 0px #DDD;
+}
+.category-body {
+    background-color: transparent;
+    height: 200px;
+    text-align: left;
+    margin: 5px 15px 5px 15px
+}
+    
+    
+    
