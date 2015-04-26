@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",'Helvetica','Arial',sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #222;
     font-weight: 300;
 }
 
@@ -292,7 +292,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -389,8 +389,7 @@ body {
 section { min-height: 100vh;}
 
 section#articles {
-    background-color: #333;
-    background-image: radial-gradient(#222, #222,  black, black);
+    background-image: 
 }
 
 .article {border: 2px solid white; }
