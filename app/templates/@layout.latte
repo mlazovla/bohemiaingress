@@ -2,7 +2,6 @@
  * @param string   $basePath web base path
  * @param array    $flashes  flash messages
  *}
-
 <!DOCTYPE html>
 <html lang="cs">
 
@@ -24,8 +23,10 @@
     <link href="{$basePath}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{$basePath}/css/ingress.css" rel="stylesheet">
     <link href="{$basePath}/css/grayscale.css" rel="stylesheet">
+    <link href="{$basePath}/css/ingress.css" rel="stylesheet">
+    <link href="{$basePath}/css/style.css" rel="stylesheet">
+    <link href="{$basePath}/css/bohemia.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{$basePath}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -87,16 +88,19 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="{$basePath}#page-top"></a>
                     </li>
                     <li>
-                        <a href="#articles">Články</a>
+                        <a href="{$basePath}#articles">Články</a>
                     </li>
                     <li>
-                        <a href="#kronika">Kronika</a>
+                        <a href="{$basePath}#kronika">Kronika</a>
                     </li>
                     <li>
-                        <a href="#tools"><i class="glyphicon glyphicon-wrench"></i> Nástroje</a>
+                        <a href="{$basePath}#rules">Pravidla</a>
+                    </li>
+                    <li>
+                        <a href="{$basePath}#tools"><i class="glyphicon glyphicon-wrench"></i> Nástroje</a>
                     </li>
                     <li>
                         <a href="https://plus.google.com/u/0/communities/107748302516468948267">G+</a>

@@ -36,9 +36,11 @@
                                     <div class="category-header">
                                         <h3>{$category->name}</h3>
                                     </div>
-                                    <div class="category-body">
-                                        <a n:href="Article:show $category->id">Update 1.74.1</a>
-                                    </div>
+                                    {foreach $category->related('article') as $article}
+                                        <div class="category-body">
+                                            <a n:href="Article:show $article->id">{$article->name}></a>
+                                        </div>
+                                    {/foreach}
                                     <div class="category-footer">
                                         (((obrázek)))
                                     </div>
@@ -93,6 +95,33 @@
                     </div>
                     <div class="col-lg-3 col-xs-10 tools-communite">
                         Mapa Intel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="content-section text-center">
+        <div class="rules-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Pravidla</h2>
+                    <div class="article">
+                        <p class="annotation">Společně se zavazujeme dodržovat tato pravidla, aby hra zůstala zábavná a férová.</p>
+
+                        <h2>Účty</h2>
+                        <ol>
+                            <li>Jeden hráč má jeden účet a jeden účet patří jednomu hráči.</li>
+                            <li>Scanner device se půjčují jen za přítomnosti vlastníků scanner device.</li>
+                        </ol>
+
+                        <h2>Komunikace</h2>
+                        <ol>
+                            <li>Hráči se v COMM neurážejí. Nejprve člověk, potom agent.</li>
+                            <li></li>
+                        </ol>
+
                     </div>
                 </div>
             </div>
