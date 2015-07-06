@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 {**
  * @param string   $basePath web base path
  * @param array    $flashes  flash messages
  *}
-<!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -60,11 +60,17 @@
         $( document ).ready(function() {
             $('a[href*=#]').on('click', function(event){
                 var patt = new RegExp('^[^#]*');
-                alert(patt.exec($(this).attr('href')) + "\n" + patt.exec(window.location.pathname));
-                if (patt.exec(window.location.pathname) == patt.exec($(this).attr('href'))) {
+                var localAddress = window.location.pathname.match(patt);
+                var hrefAddress = $(this).attr('href').match(patt);
+
+                if ( localAddress[0] == hrefAddress[0] ) {
                     event.preventDefault();
                     $('html,body').animate({ scrollTop:$(this.hash).offset().top}, 500);
+                } else {
+
+                    //alert( "bez animace \n'" + window.location.pathname.match(patt) + "'\n'" + $(this).attr('href').match(patt) + "'");
                 }
+
             });    
         });
     </script>
@@ -92,19 +98,19 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
-                        <a href="{$basePath}#page-top"></a>
+                        <a href="{$basePath}/#page-top"></a>
                     </li>
                     <li>
-                        <a href="{$basePath}#articles">Články</a>
+                        <a href="{$basePath}/#articles">Články</a>
                     </li>
                     <li>
-                        <a href="{$basePath}#kronika">Kronika</a>
+                        <a href="{$basePath}/#kronika">Kronika</a>
                     </li>
                     <li>
-                        <a href="{$basePath}#rules">Pravidla</a>
+                        <a href="{$basePath}/#rules">Pravidla</a>
                     </li>
                     <li>
-                        <a href="{$basePath}#tools"><i class="glyphicon glyphicon-wrench"></i> Nástroje</a>
+                        <a href="{$basePath}/#tools"><i class="glyphicon glyphicon-wrench"></i> Nástroje</a>
                     </li>
                     <li>
                         <a href="https://plus.google.com/u/0/communities/107748302516468948267">G+</a>
