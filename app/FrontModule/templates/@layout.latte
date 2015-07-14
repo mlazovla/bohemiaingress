@@ -67,6 +67,7 @@
                 if ( localAddress[0] == hrefAddress[0] ) {
                     event.preventDefault();
                     $('html,body').animate({ scrollTop:$(this.hash).offset().top}, 500);
+                    $(".navbar-toggle").trigger( "click" );
                 }
             });    
         });

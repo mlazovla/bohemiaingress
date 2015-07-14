@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="bohemiaingress" uploadOnCheckin="c2d606fe-635b-4012-bcdb-93c4df2c397b">
+    <serverData>
+      <paths name="bohemiaingress">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="bohemiaingress" />
+  </component>
+</project>
