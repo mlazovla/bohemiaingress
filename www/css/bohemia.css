@@ -5,7 +5,11 @@
  * Fuck them
  *
  */
-section { min-height: 100vh;}
+
+@media(min-width:768px) {
+    section { min-height: 100vh;}
+}
+
 
 .article {border: 2px solid white; }
 
