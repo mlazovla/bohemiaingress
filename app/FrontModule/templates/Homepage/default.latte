@@ -1,0 +1,134 @@
+{block content}
+        <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Bohemia Ingress</h1>
+
+						<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+                        <p class="intro-text">team
+                            <span class="ENL">Bohemia Enlightened</span>
+                        </p>
+                        
+                        <a href="{$basePath}/#articles" class="btn btn-circle">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clanky Section -->
+    <section id="articles" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Články</h2>
+                <div class="container">
+                    <div class="row">
+                        {foreach $categories as $category}
+                            <div class="col-lg-4 col-xs-10">
+                                <div class="category">
+                                    <div class="category-header">
+                                        <h3>{$category->name}</h3>
+                                    </div>
+                                    {foreach $category->related('article') as $article}
+                                        <div class="category-body">
+                                            <a n:href="Article:show $article->id">{$article->name}</a>
+                                            <span class="pull-right small">
+                                                {$article->author->name}
+                                                {$article->created_at|date:'H:i j.n.Y'}
+                                            </span>
+                                        </div>
+                                    {/foreach}
+                                    <div class="category-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        {/foreach}
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kronika Section -->
+    <section id="kronika" class="content-section text-center">
+        <div class="kronika-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Kronika</h2>
+                    <p>Archiv událostí týmů.</p>
+                    <div class="col-lg-3 col-xs-10 kronika ENL">
+                        <img src="{$baseUrl}/vectors/enlightened.svg" style="height:2em;" />
+                        Enlightened
+                    </div>
+                    <div class="col-lg-3 col-xs-10 kronika CROSS">
+                        <img src="{$baseUrl}/vectors/ingress.svg" style="height:2em;" />
+                        Cross
+                    </div>
+                    <div class="col-lg-3 col-xs-10 kronika RES">
+                        <img src="{$baseUrl}/vectors/resistance.svg" style="height:2em;" />
+                        Resistance
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="content-section text-center">
+        <div class="tools-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Nástroje</h2>
+                    <p>Nástroje ke hře Ingress.</p>
+                    <div class="col-lg-3 col-xs-10 tools-communite">
+                        Mapa Intel
+                    </div>
+                    <div class="col-lg-3 col-xs-10 tools-communite">
+                        Mapa Intel
+                    </div>
+                    <div class="col-lg-3 col-xs-10 tools-communite">
+                        Mapa Intel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="content-section text-center">
+        <div class="rules-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Pravidla</h2>
+                    <div class="article">
+                        <p class="annotation">Společně se zavazujeme dodržovat tato pravidla, aby hra zůstala zábavná a férová.</p>
+
+                        <h2>Účty</h2>
+                        <ol>
+                            <li>Jeden hráč má jeden účet a jeden účet patří jednomu hráči.</li>
+                            <li>Scanner device se půjčují jen za přítomnosti vlastníků scanner device.</li>
+                        </ol>
+
+                        <h2>Komunikace</h2>
+                        <ol>
+                            <li>Hráči se v COMM neurážejí. Nejprve člověk, potom agent.</li>
+                            <li></li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{/block}
