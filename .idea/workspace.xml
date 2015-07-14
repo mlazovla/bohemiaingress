@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48681411-c7ff-46a4-a287-ac4fb5e205f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/.htaccess.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/403.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/404.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/405.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/410.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/4xx.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/500.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/@layout.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/BasePresenter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/HomepagePresenter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/presenters/SignPresenter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Homepage/default.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AdminModule/templates/components/form.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Sign/in.latte" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/ErrorPresenter.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/presenters/ArticlePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/ArticlePresenter.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/presenters/BasePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/presenters/SignPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/@layout.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/@layout.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Article/show.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Article/show.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/403.latte" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/403.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/404.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/404.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/405.latte" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Error/405.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/410.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/410.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/4xx.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/4xx.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Error/500.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Error/500.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Homepage/default.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/Sign/in.latte" afterPath="$PROJECT_DIR$/app/AdminModule/templates/Sign/in.latte" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/components/form.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/components/form.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/router/RouterFactory.php" afterPath="$PROJECT_DIR$/app/router/RouterFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php" afterPath="$PROJECT_DIR$/app/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/grayscale.css" afterPath="$PROJECT_DIR$/www/css/grayscale.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bohemiaingress.iws" />
@@ -70,20 +35,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.latte" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default.latte" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.71208227">
+              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterFactory.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RouterFactory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63589746">
+            <state vertical-scroll-proportion="-20.666666">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
@@ -158,6 +123,7 @@
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/SignPresenter.php" />
         <option value="$PROJECT_DIR$/app/FrontModule/presenters/ArticlePresenter.php" />
         <option value="$PROJECT_DIR$/app/router/RouterFactory.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte" />
       </list>
     </option>
   </component>
@@ -261,6 +227,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohemiaingress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohemiaingress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homepage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,15 +389,22 @@
       <option name="project" value="LOCAL" />
       <updated>1436190162421</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pridan Admin module">
+      <created>1436844447804</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1436844447804</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28183118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -411,7 +414,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -463,7 +465,8 @@
     <MESSAGE value="Přidán presenter a šablona pro Article" />
     <MESSAGE value="Připravena šablona  vytvořeny styly, připravena databáze pro články." />
     <MESSAGE value="Animace fungují peckově ;-)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Animace fungují peckově ;-)" />
+    <MESSAGE value="Pridan Admin module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridan Admin module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -783,14 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334">
@@ -825,8 +820,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/router/RouterFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63589746">
+        <state vertical-scroll-proportion="-20.666666">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71208227">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
           <folding />
         </state>
       </provider>
