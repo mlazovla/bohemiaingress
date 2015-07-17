@@ -13,9 +13,9 @@ use Nette,
 class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
 {
 	const
-		TABLE_NAME = 'users',
+		TABLE_NAME = 'user',
 		COLUMN_ID = 'id',
-		COLUMN_NAME = 'username',
+		COLUMN_NAME = 'email',
 		COLUMN_PASSWORD_HASH = 'password',
 		COLUMN_ROLE = 'role';
 
@@ -32,6 +32,7 @@ class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
 
 	/**
 	 * Performs an authentication.
+	 * @param array $credentials
 	 * @return Nette\Security\Identity
 	 * @throws Nette\Security\AuthenticationException
 	 */
@@ -42,6 +43,7 @@ class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
 		$row = $this->database->table(self::TABLE_NAME)->where(self::COLUMN_NAME, $username)->fetch();
 
 		if (!$row) {
+			//$this->add($username, $password); // add user DANGER!
 			throw new Nette\Security\AuthenticationException('The username is incorrect.', self::IDENTITY_NOT_FOUND);
 
 		} elseif (!Passwords::verify($password, $row[self::COLUMN_PASSWORD_HASH])) {
@@ -55,15 +57,17 @@ class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
 
 		$arr = $row->toArray();
 		unset($arr[self::COLUMN_PASSWORD_HASH]);
-		return new Nette\Security\Identity($row[self::COLUMN_ID], $row[self::COLUMN_ROLE], $arr);
+		return new Nette\Security\Identity($row[self::COLUMN_ID], $row[self::COLUMN_ROLE]->name, $arr);
 	}
 
 
 	/**
 	 * Adds new user.
-	 * @param  string
-	 * @param  string
-	 * @return void
+	 * @param $username
+	 * @param $password
+	 * @throws DuplicateNameException
+	 * @internal param $string
+	 * @internal param $string
 	 */
 	public function add($username, $password)
 	{

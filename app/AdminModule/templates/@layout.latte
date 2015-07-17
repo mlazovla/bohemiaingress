@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>{ifset title}{include title|striptags} | {/ifset}SOS</title>
+	<title>{ifset title}{include title|striptags} | {/ifset}Bohemia Ingress</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{$basePath}/css/bootstrap.min.css" rel="stylesheet">
@@ -48,11 +48,12 @@
 
 <body>
 
-    <!-- Navigation -->
-    <div class="navbar">
-        Navigace
+    {include 'navigation.inc'}
+    <div class="container">
+        {block content}{/block}
     </div>
-    {block content}{/block}
+
+
 
     <!-- Footer -->
     <footer>

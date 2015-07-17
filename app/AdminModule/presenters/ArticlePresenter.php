@@ -3,25 +3,28 @@
 namespace App\AdminModule\Presenters;
 
 use Nette,
-    App\Model;
+	App\Model;
 
 use App\Model\Category;
 use Nette\Database\Context;
 
 /**
- * Homepage presenter.
+ * Article presenter.
  */
-class HomepagePresenter extends BasePresenter
+class ArticlePresenter extends BasePresenter
 {
+	/**
+	 * @var Model\Article
+	 * @inject
+	 */
+	public $article;
+
 	public function actionDefault() {
-		if (! $this->user->loggedIn) {
-			$this->redirect('Sign:in');
-		}
 	}
 
 	public function renderDefault()
 	{
-		// DASHBOARD
+		$this->template->article = $this->article;
 	}
 
 }
